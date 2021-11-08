@@ -51,6 +51,8 @@ while fillimi_i_menys == "po":
     sleep(.1)
     print("Vendos numrin 2 per te hapur menun e programeve")
     sleep(.1)
+    print("Vendos numrin 3 per te pare informacione rreth programit")
+    sleep(.1)
     # Variabla e menys
     menuja = int(input("\nCilen meny deshironi te hapni? "))
 
@@ -444,6 +446,7 @@ while fillimi_i_menys == "po":
             sleep(.1)
             break 
     # Menuja e dyte
+
     while menuja == 2:
         # Menuja e programeve
         print("\n//////////////////////////////////////////////////////////////////////")
@@ -685,6 +688,57 @@ while fillimi_i_menys == "po":
             sleep(.1)
             break 
     
+    # Menuja e trete
+    while menuja == 3:
+        print("\nKy është projekti im final i kursit dy mujor në Bonevet rreth Python.")
+        sleep(1)
+        print("\nProjekti përmban një Main Menu (Menyn Kryesore) i cili përbëhet nga 4 Lojra & 3 Programe")
+        sleep(1.5)
+        print("\nKy programë është realizuar në vitin 2019")
+        sleep(1)
+        print("Zhvilluesi i ketij programi është Rilind Kyçyku")
+        sleep(1)
+        print("Përditësimi i fundit i këtij programit është bërë në vitin 2021")
+        sleep(1.5)
+        print("\nLista e Lojrave")
+        sleep(1)
+        print("* Loja e Fantazmës")
+        sleep(.50)
+        print("* Loja e Lotaris")
+        sleep(.50)
+        print("* Hedhja e Gurëve - 2 Lojtarë")
+        sleep(.50)
+        print("* Random Number")
+        sleep(.50)
+        print("\nLista e Programeve")
+        sleep(1)
+        print("* Gjenerimi i Password-it")
+        sleep(.50)
+        print("* Konvertimi i Gradëve °C & °F")
+        sleep(.50)
+        print("* Gjetja e Perimetrit")
+        sleep(.50)
+
+        # Keto funksione sherbejn per tu kthyer ne menu
+        menuja = 0
+        print('\nShkruani "Po" per tu rikthyer,')
+        sleep(.1)
+        print('Shkruani "Jo" per te mbyllur programin.')
+        sleep(.1)
+        fillimi_i_menys = input("A deshironi te ktheheni mbrapa? ")
+        fillimi_i_menys = fillimi_i_menys.lower()
+
+        # Ky kod sherben per tu kthyer prapa ne menu
+        while menuja == 9:
+            menuja = 0
+            fillimi_i_menys == "po"
+    
+        # Ky funksion sherben kur perdoruesi nuk deshiron te kthehet ne menu
+        while fillimi_i_menys == "jo":
+            menuja = 0
+            print("\nMire u pafshim", perdoruesi)
+            sleep(.1)
+            break 
 
 # Keto inpute sherbejn qe kur programi te hapet ne Comand Prompt te Pythonit mos te mbyllet pas perfundimit
 input()
