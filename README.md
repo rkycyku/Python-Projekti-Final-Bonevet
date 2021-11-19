@@ -8,10 +8,13 @@ Projekti përmban një **Main Menu (Menyn Kryesore)** i cili përbëhet nga **4 
 ## Main Menu
 
 ### Lista e Lojrave
-- Loja e Fantazmës
 - Loja e Lotaris
 - Hedhja e Gurëve - 2 Lojtarë
 - Random Number
+- Loja e Fantazmës
+- Loja e Pelcitesit
+
+* Disa nga keto lojra jane te marra nga libri.
 
 ### Lista e Programeve
 - Gjenerimi i Password-it

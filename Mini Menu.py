@@ -3,8 +3,12 @@ from random import randint,choice,shuffle
 ## Randint perdoret per te zgjedhur nje numer te qfardoshem
 ## Choice perdoret per te zgjedhur diqka nga lista
 ## Shuffle perdeoret per te perzier karakteret
-from time import sleep
+from time import sleep, time
 ## Sleep perdoret per ta vendosur nje komand ne pritje per aq kohe sa i japim 
+from tkinter import *
+## Tkinter sherben ne Lojen e Pelcitesit i cili mundeson hapjen e nje dritare te re
+from math import sqrt
+## SQRT sherben per te marr rrenjen katrore
 
 
 # Emri i perdoruesit
@@ -18,7 +22,7 @@ perdoruesilen = len(perdoruesi)
 
 ## Menyja nese emri i pedoruesit ka 3 Shkronja
 if perdoruesilen == 3:
-    # Keto variabla sherbejne per te pyetur perdoruesin a deshiron te hapi menun apo jo
+    # Ky mesazh sherben per te pershendetur perdoruesin
     print("\n///////////////////////////////////////////////")
     sleep(.1)
     print("/                                             /")
@@ -41,11 +45,13 @@ if perdoruesilen == 3:
     sleep(.1)
     print('Shkruani "Jo" per te mbyllur programin.')
     sleep(.1)
+    # Keto variabla sherbejne per te pyetur perdoruesin a deshiron te hapi menun apo jo
     fillimi_i_menys = input("\nA deshironi te hapni menun? ")
     fillimi_i_menys = fillimi_i_menys.lower()
-## Menyja nese emri i pedoruesit ka 3 Shkronja
+
+## Menyja nese emri i pedoruesit ka 4 Shkronja
 elif perdoruesilen == 4:
-    # Keto variabla sherbejne per te pyetur perdoruesin a deshiron te hapi menun apo jo
+    # Ky mesazh sherben per te pershendetur perdoruesin
     print("\n////////////////////////////////////////////////")
     sleep(.1)
     print("/                                              /")
@@ -68,11 +74,13 @@ elif perdoruesilen == 4:
     sleep(.1)
     print('Shkruani "Jo" per te mbyllur programin.')
     sleep(.1)
+    # Keto variabla sherbejne per te pyetur perdoruesin a deshiron te hapi menun apo jo
     fillimi_i_menys = input("\nA deshironi te hapni menun? ")
     fillimi_i_menys = fillimi_i_menys.lower()
-## Menyja nese emri i pedoruesit ka 3 Shkronja
+
+## Menyja nese emri i pedoruesit ka 5 Shkronja
 elif perdoruesilen == 5:
-    # Keto variabla sherbejne per te pyetur perdoruesin a deshiron te hapi menun apo jo
+    # Ky mesazh sherben per te pershendetur perdoruesin
     print("\n/////////////////////////////////////////////////")
     sleep(.1)
     print("/                                               /")
@@ -95,11 +103,13 @@ elif perdoruesilen == 5:
     sleep(.1)
     print('Shkruani "Jo" per te mbyllur programin.')
     sleep(.1)
+    # Keto variabla sherbejne per te pyetur perdoruesin a deshiron te hapi menun apo jo
     fillimi_i_menys = input("\nA deshironi te hapni menun? ")
     fillimi_i_menys = fillimi_i_menys.lower()
-## Menyja nese emri i pedoruesit ka 3 Shkronja
+
+## Menyja nese emri i pedoruesit ka 6 Shkronja
 elif perdoruesilen == 6:
-    # Keto variabla sherbejne per te pyetur perdoruesin a deshiron te hapi menun apo jo
+    # Ky mesazh sherben per te pershendetur perdoruesin
     print("\n//////////////////////////////////////////////////")
     sleep(.1)
     print("/                                                /")
@@ -122,11 +132,13 @@ elif perdoruesilen == 6:
     sleep(.1)
     print('Shkruani "Jo" per te mbyllur programin.')
     sleep(.1)
+    # Keto variabla sherbejne per te pyetur perdoruesin a deshiron te hapi menun apo jo
     fillimi_i_menys = input("\nA deshironi te hapni menun? ")
     fillimi_i_menys = fillimi_i_menys.lower()
-## Menyja nese emri i pedoruesit ka 3 Shkronja
+
+## Menyja nese emri i pedoruesit ka 7 Shkronja
 elif perdoruesilen == 7:
-    # Keto variabla sherbejne per te pyetur perdoruesin a deshiron te hapi menun apo jo
+    # Ky mesazh sherben per te pershendetur perdoruesin
     print("\n///////////////////////////////////////////////////")
     sleep(.1)
     print("/                                                 /")
@@ -149,11 +161,13 @@ elif perdoruesilen == 7:
     sleep(.1)
     print('Shkruani "Jo" per te mbyllur programin.')
     sleep(.1)
+    # Keto variabla sherbejne per te pyetur perdoruesin a deshiron te hapi menun apo jo
     fillimi_i_menys = input("\nA deshironi te hapni menun? ")
     fillimi_i_menys = fillimi_i_menys.lower()
-## Menyja nese emri i pedoruesit ka 3 Shkronja
+
+## Menyja nese emri i pedoruesit ka 8 Shkronja
 elif perdoruesilen == 8:
-    # Keto variabla sherbejne per te pyetur perdoruesin a deshiron te hapi menun apo jo
+    # Ky mesazh sherben per te pershendetur perdoruesin
     print("\n////////////////////////////////////////////////////")
     sleep(.1)
     print("/                                                  /")
@@ -176,8 +190,11 @@ elif perdoruesilen == 8:
     sleep(.1)
     print('Shkruani "Jo" per te mbyllur programin.')
     sleep(.1)
+
+    # Keto variabla sherbejne per te pyetur perdoruesin a deshiron te hapi menun apo jo
     fillimi_i_menys = input("\nA deshironi te hapni menun? ")
     fillimi_i_menys = fillimi_i_menys.lower()
+
 ## Menyja nese emri i pedoruesit nuk perbush asnje nga kriteret e mesiperme
 else:
     print("\nMirësevini", perdoruesi)
@@ -190,6 +207,12 @@ else:
     sleep(.1)
     fillimi_i_menys = input("\nA deshironi te hapni menun? ")
     fillimi_i_menys = fillimi_i_menys.lower()
+
+# Ne rast se pordoruesi zgjedh nje meny tjeter,
+# Ateher ky kod i mundeson te zgjedhi perseri
+while fillimi_i_menys != "po" and fillimi_i_menys != "jo":
+        print('Keni shkruar menun gabim!')
+        fillimi_i_menys = input("\nJu lutemi shkeruani prap se cilen menu deshironi te hapni? ")
 
 # Ky funksion sherben kur perdoruesi nuk deshiron te kthehet ne menu
 while fillimi_i_menys == "jo":
@@ -226,6 +249,12 @@ while fillimi_i_menys == "po":
     # Variabla e menys
     menuja = int(input("\nCilen meny deshironi te hapni? "))
 
+    # Ne rast se pordoruesi zgjedh nje numer i cili nuk eshte ne meny,
+    # Ateher ky kod i mundeson te zgjedhi perseri
+    while menuja != 1 and menuja !=2 and menuja !=3:
+        print('Keni shkruar numrin gabim!')
+        menuja = int(input("\nJu lutemi shkeruani prap se cilen menu deshironi te hapni? "))
+
     # Kodimet e Menyve 
 
     # Menuja e pare
@@ -252,12 +281,18 @@ while fillimi_i_menys == "po":
         sleep(.1)
         print('Vendos numrin 3 per te luajtur lojen e "Gure,Leter & Gershere"')
         sleep(.1)
+        print('Vendos numrin 4 per te luajtur lojen e "Fantazmes"')
+        sleep(.1)
+        print('Vendos numrin 5 per te luajtur lojen e "Pelcitesit"')
+        sleep(.1)
         print('Vendos numrin 9 per tu kthyer prapa ne menu')
         sleep(.1)
         # Variabla e lojes
         loja = int(input("\nCilen loje deshironi te luani? "))
         
-        while loja != 1 and loja !=2 and loja !=3 and loja !=9:
+        # Ne rast se pordoruesi zgjedh nje numer i cili nuk eshte ne meny,
+        # Ateher ky kod i mundeson te zgjedhi perseri
+        while loja != 1 and loja !=2 and loja !=3 and loja !=4 and loja !=5 and loja !=9:
             print('Keni shkruar numrin gabim!')
             loja = int(input("\nJu lutemi shkeruani prap se cilen loje deshironi te luani? "))
 
@@ -606,12 +641,236 @@ while fillimi_i_menys == "po":
             fillimi_i_menys = input("A deshironi te ktheheni mbrapa? ")
             fillimi_i_menys = fillimi_i_menys.lower()
         
+        # Loja e Fantazmes
+        while loja == 4:
+            # Grafiku i lojes se lotaris
+            print("\n////////////////////////////////////////////////////////////////////")
+            sleep(.1)
+            print("/                                                                  /")
+            sleep(.1)
+            print("/                                                                  /")
+            sleep(.1)
+            print("/                         Loja e Fantazmes                         /")
+            sleep(.1)
+            print("/                                                                  /")
+            sleep(.1)
+            print("/                                                                  /")
+            sleep(.1)
+            print("////////////////////////////////////////////////////////////////////")
+
+            # Pershendetja e Perdoruesit
+            print("\nPershendetje", perdoruesi, 'eshte koha per te luajtur "Loja e Fantazmes"')
+            sleep(1)
+
+            # Kodimi i lojes
+            ndihem_i_guximshem = True
+            piket = 0
+
+            while ndihem_i_guximshem:
+                dera_e_fantazmes = randint(1,3)
+                print("\nTre dyer perpara...")
+                sleep(1)
+                print("Nje fantazem pas njeres.")
+                sleep(1)
+                print("Cilen dere do te hapni?")
+                sleep(1)
+                dera = input("1,2 apo 3? ")
+                sleep(1)
+                numri_i_deres = int(dera)
+
+                ## Ky sherben ne rast se numri i zgjedhur eshte i njejte
+                ## Me ate ne te cilin eshte fantazma
+                if numri_i_deres == dera_e_fantazmes:
+                    print("\nFantazem!")
+                    sleep(1)
+                    ndihem_i_guximshem = False
+                ## Ne rast se numri i zgjedhur nuk eshte i njejte me ate te fantazmes
+                ## Ky kod muneson vazhdimin e lojes per ne deren tjeter
+                else:
+                    print("\nNuk ka Fantazem!")
+                    sleep(1)
+                    print("Ti u fute ne dhomen tjeter.")
+                    sleep(1)
+                    piket +=1
+
+            print("\nLargohu!")
+            sleep(1)
+            # Keto funksione sherbejne per te printuar rezultatin
+            if piket == 1:
+                print("Loja Mbaroi! Ti kalove", piket, "dhomë")
+            else:
+                print("Loja Mbaroi! Ti kalove", piket, "dhoma")
+
+            # Keto funksione sherbejn per tu kthyer ne menu
+            loja = 0
+            print('\nShkruani "Po" per tu rikthyer,')
+            sleep(.1)
+            print('Shkruani "Jo" per te mbyllur programin.')
+            sleep(.1)
+            fillimi_i_menys = input("A deshironi te ktheheni mbrapa? ")
+            fillimi_i_menys = fillimi_i_menys.lower()
+
+        # Loja e Pelcitesit
+        while loja == 5:
+            # Grafiku i lojes se lotaris
+            print("\n////////////////////////////////////////////////////////////////////")
+            sleep(.1)
+            print("/                                                                  /")
+            sleep(.1)
+            print("/                                                                  /")
+            sleep(.1)
+            print("/                         Loja e Fantazmes                         /")
+            sleep(.1)
+            print("/                                                                  /")
+            sleep(.1)
+            print("/                                                                  /")
+            sleep(.1)
+            print("////////////////////////////////////////////////////////////////////")
+
+            # Ky print sherben per te njoftuar perdoruesin se loja do hapet ne faqe tjeter
+            # Ndersa sleep(5) sherben per te pritur 5 sekonda deri ne fillim te lojes
+            print("\n***LOJA DO HAPET NE FAQE TJETER***")
+            sleep(5)
+
+            # Fillimi i kodimit te lojes
+            HEIGHT = 500
+            WIDTH = 800
+            window = Tk()
+            window.title("Pelcitesi i fluskave")
+            c = Canvas (window, width = WIDTH, height = HEIGHT, bg = 'darkblue')
+            c.pack()
+
+            ship_id = c.create_polygon(5, 5, 5, 25, 30, 15, fill = 'red')
+            ship_id2 = c.create_oval(0, 0, 30, 30, outline = 'red')
+            SHIP_R = 15
+            MID_X = WIDTH / 2
+            MID_Y = HEIGHT / 2
+            c.move(ship_id, MID_X, MID_Y)
+            c.move(ship_id2, MID_X, MID_Y)
+
+            SHIP_SPD = 10
+            def move_ship(event):
+                if event.keysym == "W" or event.keysym == "w" or event.keysym == "Up":
+                    c.move(ship_id, 0, -SHIP_SPD)
+                    c.move(ship_id2, 0, -SHIP_SPD)
+                elif event.keysym == "S" or event.keysym == "s" or event.keysym == "Down":
+                    c.move(ship_id, 0, SHIP_SPD)
+                    c.move(ship_id2, 0,SHIP_SPD)
+                elif event.keysym == "A" or event.keysym == "a" or event.keysym == "Left":
+                    c.move(ship_id, -SHIP_SPD, 0)
+                    c.move(ship_id2, -SHIP_SPD, 0)
+                elif event.keysym == "D" or event.keysym == "d" or event.keysym == "Right":
+                    c.move(ship_id, SHIP_SPD, 0)
+                    c.move(ship_id2, SHIP_SPD, 0)
+            c.bind_all('<Key>', move_ship)
+
+            bub_id = list()
+            bub_r = list()
+            bub_speed = list()
+            MIN_BUB_R = 10
+            MAX_BUB_R = 30
+            MAX_BUB_SPD = 10
+            GAP = 100
+            def create_bubble():
+                x = WIDTH + GAP
+                y = randint(0, HEIGHT)
+                r = randint(MIN_BUB_R, MAX_BUB_R)
+                id1 = c.create_oval(x - r, y - r, x + r, y + r, outline = "white")
+                bub_id.append(id1)
+                bub_r.append(r)
+                bub_speed.append(randint(1, MAX_BUB_SPD))
+
+            def move_bubbles():
+                for i in range(len(bub_id)):
+                    c.move(bub_id[i], -bub_speed[i], 0)
+
+            def get_coords(id_num):
+                pos = c.coords(id_num)
+                x = (pos[0] + pos[2])/2
+                y = (pos[1] + pos[3])/2
+                return x, y
+
+            def del_bubble(i):
+                del bub_r[i]
+                del bub_speed[i]
+                c.delete(bub_id[i])
+                del bub_id[i]
+
+            def clean_up_bubs():
+                for i in range(len(bub_id) - 1, -1, -1):
+                    x, y = get_coords(bub_id[i])
+                    if x < -GAP:
+                        del_bubble(i)
+
+            def distance(id1, id2):
+                x1, y1 = get_coords(id1)
+                x2, y2 = get_coords(id2)
+                return sqrt((x2 - x1)**2 + (y2 - y1)**2)
+
+            def collision():
+                points = 0
+                for bub in range(len(bub_id)-1, -1, -1):
+                    if distance(ship_id2, bub_id[bub]) < (SHIP_R + bub_r[bub]):
+                        points += (bub_r[bub] + bub_speed[bub])
+                        del_bubble(bub)
+                return points
+
+            c.create_text(50, 30, text="KOHA", fill="white")
+            c.create_text(150,30, text="PIKET", fill="white")
+            time_text = c.create_text(50, 50, fill="white")
+            score_text = c.create_text(150, 50, fill="white")
+
+            def show_score(score):
+                c.itemconfig(score_text, text=str(score))
+
+            def show_time(time_left):
+                c.itemconfig(time_text, text=str(time_left))
+
+            BUB_CHANCE = 10
+            TIME_LIMIT = 30
+            BONUS_SCORE = 1000
+            score = 0
+            bonus = 0
+            end = time() + TIME_LIMIT
+            #MAIN GAME LOOP
+            while time() < end:
+                if randint(1, BUB_CHANCE) == 1:
+                    create_bubble()
+                move_bubbles()
+                clean_up_bubs()
+                score += collision()
+                if (int(score / BONUS_SCORE)) > bonus:
+                    bonus += 1
+                    end += TIME_LIMIT
+                show_score(score)
+                show_time(int(end - time()))
+                window.update()
+                sleep(0.01)
+
+            c.create_text(MID_X, MID_Y, \
+                        text="LOJA MBAROI", fill="white", font=("Helvetica", 30))
+            c.create_text(MID_X, MID_Y + 30, \
+                        text="Piket: " + str(score), fill="white")
+            c.create_text(MID_X, MID_Y + 45, \
+                        text="Koha shperblim: " + str(bonus*TIME_LIMIT) + "sekonda", fill="white")
+            c.create_text(MID_X, MID_Y + 60, \
+                        text="Ti ke kohe shtese: " + str(bonus) + " here", fill="white")
+
+            # Keto funksione sherbejn per tu kthyer ne menu
+            loja = 0
+            print('\nShkruani "Po" per tu rikthyer,')
+            sleep(.1)
+            print('Shkruani "Jo" per te mbyllur programin.')
+            sleep(.1)
+            fillimi_i_menys = input("A deshironi te ktheheni mbrapa? ")
+            fillimi_i_menys = fillimi_i_menys.lower()
+
         # Ky kod sherben per tu kthyer prapa ne menu
         while loja == 9:
             loja = 0
             menuja = 0
             fillimi_i_menys == "po"
-        
+            
         # Ky funksion sherben kur perdoruesi nuk deshiron te kthehet ne menu
         while fillimi_i_menys == "jo":
             loja = 0
@@ -649,6 +908,12 @@ while fillimi_i_menys == "po":
         # Variabla e Programit
         programi = int(input("\nCilin program deshironi te perdorni? "))
         
+        # Ne rast se pordoruesi zgjedh nje program i cili nuk eshte ne meny,
+        # Ateher ky kod i mundeson te zgjedhi perseri
+        while programi != 1 and programi !=2 and programi !=3 and programi !=9:
+            print('Keni shkruar numrin gabim!')
+            programi = int(input("\nJu lutemi shkeruani prap se cilin programe deshironi te hapni? "))
+
         # Fillimi i kodimit te Programeve
         
         # Konvertimi i Gradeve
@@ -876,13 +1141,15 @@ while fillimi_i_menys == "po":
         sleep(1.5)
         print("\nLista e Lojrave")
         sleep(1)
-        print("* Loja e Fantazmës")
-        sleep(.50)
         print("* Loja e Lotaris")
         sleep(.50)
         print("* Hedhja e Gurëve - 2 Lojtarë")
         sleep(.50)
         print("* Random Number")
+        sleep(.50)
+        print("* Loja e Fantazmës")
+        sleep(.50)
+        print("* Loja e Pelcitesit")
         sleep(.50)
         print("\nLista e Programeve")
         sleep(1)
