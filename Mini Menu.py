@@ -10,16 +10,186 @@ from time import sleep
 # Emri i perdoruesit
 perdoruesi = input("Pershendetje. Si quheni? ")
 sleep(.5)
-# Ky mesazh sherben per te pershendetur perdoruesin
-print("\nMiresevini", perdoruesi)
-sleep(.5)
-# Keto variabla sherbejne per te pyetur perdoruesin a deshiron te hapi menun apo jo
-print('\nShkruani "Po" per te hapur menun,')
-sleep(.1)
-print('Shkruani "Jo" per te mbyllur programin.')
-sleep(.1)
-fillimi_i_menys = input("\nA deshironi te hapni menun? ")
-fillimi_i_menys = fillimi_i_menys.lower()
+## Ne rast se perdoruesi e shkruan emrin me shkronja te vogla,
+## Ky funksion shkronjen e pare e ben gjithmon te madhe
+perdoruesi = perdoruesi.capitalize()
+# Ky funksion sherben per te numeruar sa shkronja i posedon emri i perdoruesit
+perdoruesilen = len(perdoruesi)
+
+## Menyja nese emri i pedoruesit ka 3 Shkronja
+if perdoruesilen == 3:
+    # Keto variabla sherbejne per te pyetur perdoruesin a deshiron te hapi menun apo jo
+    print("\n///////////////////////////////////////////////")
+    sleep(.1)
+    print("/                                             /")
+    sleep(.1)
+    print("/                                             /")
+    sleep(.1)
+    print("/                  Mini Menu                  /")
+    sleep(.1)
+    print("/                                             /")
+    sleep(.1)
+    print("/               Mirësevini,",perdoruesi,"              /")
+    sleep(.1)
+    print("/                                             /")
+    sleep(.1)
+    print("/                                             /")
+    sleep(.1)
+    print("///////////////////////////////////////////////")
+    sleep(.1)
+    print('\nShkruani "Po" per te hapur menun,')
+    sleep(.1)
+    print('Shkruani "Jo" per te mbyllur programin.')
+    sleep(.1)
+    fillimi_i_menys = input("\nA deshironi te hapni menun? ")
+    fillimi_i_menys = fillimi_i_menys.lower()
+## Menyja nese emri i pedoruesit ka 3 Shkronja
+elif perdoruesilen == 4:
+    # Keto variabla sherbejne per te pyetur perdoruesin a deshiron te hapi menun apo jo
+    print("\n////////////////////////////////////////////////")
+    sleep(.1)
+    print("/                                              /")
+    sleep(.1)
+    print("/                                              /")
+    sleep(.1)
+    print("/                    Mini Menu                 /")
+    sleep(.1)
+    print("/                                              /")
+    sleep(.1)
+    print("/               Mirësevini,",perdoruesi,"              /")
+    sleep(.1)
+    print("/                                              /")
+    sleep(.1)
+    print("/                                              /")
+    sleep(.1)
+    print("////////////////////////////////////////////////")
+    sleep(.1)
+    print('\nShkruani "Po" per te hapur menun,')
+    sleep(.1)
+    print('Shkruani "Jo" per te mbyllur programin.')
+    sleep(.1)
+    fillimi_i_menys = input("\nA deshironi te hapni menun? ")
+    fillimi_i_menys = fillimi_i_menys.lower()
+## Menyja nese emri i pedoruesit ka 3 Shkronja
+elif perdoruesilen == 5:
+    # Keto variabla sherbejne per te pyetur perdoruesin a deshiron te hapi menun apo jo
+    print("\n/////////////////////////////////////////////////")
+    sleep(.1)
+    print("/                                               /")
+    sleep(.1)
+    print("/                                               /")
+    sleep(.1)
+    print("/                    Mini Menu                  /")
+    sleep(.1)
+    print("/                                               /")
+    sleep(.1)
+    print("/               Mirësevini,",perdoruesi,"              /")
+    sleep(.1)
+    print("/                                               /")
+    sleep(.1)
+    print("/                                               /")
+    sleep(.1)
+    print("/////////////////////////////////////////////////")
+    sleep(.1)
+    print('\nShkruani "Po" per te hapur menun,')
+    sleep(.1)
+    print('Shkruani "Jo" per te mbyllur programin.')
+    sleep(.1)
+    fillimi_i_menys = input("\nA deshironi te hapni menun? ")
+    fillimi_i_menys = fillimi_i_menys.lower()
+## Menyja nese emri i pedoruesit ka 3 Shkronja
+elif perdoruesilen == 6:
+    # Keto variabla sherbejne per te pyetur perdoruesin a deshiron te hapi menun apo jo
+    print("\n//////////////////////////////////////////////////")
+    sleep(.1)
+    print("/                                                /")
+    sleep(.1)
+    print("/                                                /")
+    sleep(.1)
+    print("/                     Mini Menu                  /")
+    sleep(.1)
+    print("/                                                /")
+    sleep(.1)
+    print("/                Mirësevini,",perdoruesi,"             /")
+    sleep(.1)
+    print("/                                                /")
+    sleep(.1)
+    print("/                                                /")
+    sleep(.1)
+    print("//////////////////////////////////////////////////")
+    sleep(.1)
+    print('\nShkruani "Po" per te hapur menun,')
+    sleep(.1)
+    print('Shkruani "Jo" per te mbyllur programin.')
+    sleep(.1)
+    fillimi_i_menys = input("\nA deshironi te hapni menun? ")
+    fillimi_i_menys = fillimi_i_menys.lower()
+## Menyja nese emri i pedoruesit ka 3 Shkronja
+elif perdoruesilen == 7:
+    # Keto variabla sherbejne per te pyetur perdoruesin a deshiron te hapi menun apo jo
+    print("\n///////////////////////////////////////////////////")
+    sleep(.1)
+    print("/                                                 /")
+    sleep(.1)
+    print("/                                                 /")
+    sleep(.1)
+    print("/                      Mini Menu                  /")
+    sleep(.1)
+    print("/                                                 /")
+    sleep(.1)
+    print("/               Mirësevini,",perdoruesi,"              /")
+    sleep(.1)
+    print("/                                                 /")
+    sleep(.1)
+    print("/                                                 /")
+    sleep(.1)
+    print("///////////////////////////////////////////////////")
+    sleep(.1)
+    print('\nShkruani "Po" per te hapur menun,')
+    sleep(.1)
+    print('Shkruani "Jo" per te mbyllur programin.')
+    sleep(.1)
+    fillimi_i_menys = input("\nA deshironi te hapni menun? ")
+    fillimi_i_menys = fillimi_i_menys.lower()
+## Menyja nese emri i pedoruesit ka 3 Shkronja
+elif perdoruesilen == 8:
+    # Keto variabla sherbejne per te pyetur perdoruesin a deshiron te hapi menun apo jo
+    print("\n////////////////////////////////////////////////////")
+    sleep(.1)
+    print("/                                                  /")
+    sleep(.1)
+    print("/                                                  /")
+    sleep(.1)
+    print("/                      Mini Menu                   /")
+    sleep(.1)
+    print("/                                                  /")
+    sleep(.1)
+    print("/                Mirësevini,",perdoruesi,"             /")
+    sleep(.1)
+    print("/                                                  /")
+    sleep(.1)
+    print("/                                                  /")
+    sleep(.1)
+    print("////////////////////////////////////////////////////")
+    sleep(.1)
+    print('\nShkruani "Po" per te hapur menun,')
+    sleep(.1)
+    print('Shkruani "Jo" per te mbyllur programin.')
+    sleep(.1)
+    fillimi_i_menys = input("\nA deshironi te hapni menun? ")
+    fillimi_i_menys = fillimi_i_menys.lower()
+## Menyja nese emri i pedoruesit nuk perbush asnje nga kriteret e mesiperme
+else:
+    print("\nMirësevini", perdoruesi)
+    # Ky mesazh sherben per te pershendetur perdoruesin
+    sleep(.5)
+    # Keto variabla sherbejne per te pyetur perdoruesin a deshiron te hapi menun apo jo
+    print('\nShkruani "Po" per te hapur menun,')
+    sleep(.1)
+    print('Shkruani "Jo" per te mbyllur programin.')
+    sleep(.1)
+    fillimi_i_menys = input("\nA deshironi te hapni menun? ")
+    fillimi_i_menys = fillimi_i_menys.lower()
 
 # Ky funksion sherben kur perdoruesi nuk deshiron te kthehet ne menu
 while fillimi_i_menys == "jo":
@@ -86,6 +256,10 @@ while fillimi_i_menys == "po":
         sleep(.1)
         # Variabla e lojes
         loja = int(input("\nCilen loje deshironi te luani? "))
+        
+        while loja != 1 and loja !=2 and loja !=3 and loja !=9:
+            print('Keni shkruar numrin gabim!')
+            loja = int(input("\nJu lutemi shkeruani prap se cilen loje deshironi te luani? "))
 
         # Fillimi i kodimit te lojrave
         
@@ -445,8 +619,8 @@ while fillimi_i_menys == "po":
             print("\nMire u pafshim", perdoruesi)
             sleep(.1)
             break 
+    
     # Menuja e dyte
-
     while menuja == 2:
         # Menuja e programeve
         print("\n//////////////////////////////////////////////////////////////////////")
@@ -739,6 +913,7 @@ while fillimi_i_menys == "po":
             print("\nMire u pafshim", perdoruesi)
             sleep(.1)
             break 
+
 
 # Keto inpute sherbejn qe kur programi te hapet ne Comand Prompt te Pythonit mos te mbyllet pas perfundimit
 input()
