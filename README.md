@@ -10,7 +10,7 @@ Projekti përmban një **Main Menu (Menyn Kryesore)** i cili përbëhet nga **4 
 ### Lista e Lojrave
 - Loja e Lotaris
 - Hedhja e Gurëve - 2 Lojtarë
-- Random Number
+- Gure, Leter & Gershere
 - Loja e Fantazmës
 - Loja e Pelcitesit
 
